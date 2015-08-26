@@ -33,29 +33,25 @@ public class Mario {
         int count, spaces, hashtag;
         int places = number + 1;
         
-        //use a Stringbuilder to print out half-pyramid
-        String hashtagString = new String();
-        String spacesString = new String();
-        StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.append(spacesString);
-            stringBuilder.append(hashtagString);
-            System.out.println(stringBuilder.toString());
-        
-
         // create row
         for (count = 0; count < number * places; count++) {
             // create spaces
             for (spaces = 1; spaces <= number - 1; spaces++)
             {
-                spacesString = spacesString + " ";
+                String spacesString = " ";
             }
 
             // create hashtags
             for (hashtag = 0; hashtag <= places - spaces; hashtag++)
             {
-                hashtagString = hashtagString + "#";
+                String hashtagString = "#";
             }
-
+            //use a Stringbuilder to print out half-pyramid
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.append(spacesString);
+            stringBuilder.append(hashtagString);
+            System.out.println(stringBuilder.toString());
+        
             // go to the next line or row
             number--;
 

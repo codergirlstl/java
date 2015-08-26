@@ -34,8 +34,8 @@ public class Mario {
         int places = number + 1;
         
         //use a Stringbuilder to print out half-pyramid
-        String hashtagString = "#";
-        String spacesString = " ";
+        String hashtagString = new String();
+        String spacesString = new String();
         StringBuilder stringbuilder = new StringBuilder();
             stringbuilder.append(spacesString);
             stringbuilder.append(hashtagString);
@@ -45,13 +45,15 @@ public class Mario {
         // create row
         for (count = 0; count < number * places; count++) {
             // create spaces
-            for (spaces = 1; spaces <= number - 1; spaces++) {
-    
+            for (spaces = 1; spaces <= number - 1; spaces++)
+            {
+                spacesString = spacesString + " ";
             }
 
             // create hashtags
-            for (hashtag = 0; hashtag <= places - spaces; hashtag++) {
-            
+            for (hashtag = 0; hashtag <= places - spaces; hashtag++)
+            {
+                hashtagString = hashtagString + "#";
             }
 
             // go to the next line or row

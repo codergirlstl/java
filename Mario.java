@@ -36,10 +36,10 @@ public class Mario {
         //use a Stringbuilder to print out half-pyramid
         String hashtagString = new String();
         String spacesString = new String();
-        StringBuilder stringbuilder = new StringBuilder();
-            stringbuilder.append(spacesString);
-            stringbuilder.append(hashtagString);
-            System.out.println(stringBuilder.toString);
+        StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.append(spacesString);
+            stringBuilder.append(hashtagString);
+            System.out.println(stringBuilder.toString());
         
 
         // create row

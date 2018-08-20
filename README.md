@@ -1,2 +1,2 @@
 # java
-Problem set for java class
+Problem sets for launchcode java class.
